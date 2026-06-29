@@ -11,6 +11,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+
 				<section data-auto-animate data-markdown>
 					<textarea data-template>
 					## Slide 1
@@ -36,7 +37,7 @@
             > quel suprise!
           </section>
           <section data-auto-animate>
-            Vertical Slide 2
+
             <aside class="notes" data-markdown>
               ## so many things
             </aside>
@@ -49,13 +50,14 @@
 				<section>
 				  Slide 3
     		  <pre><code data-trim data-noescape>
-      (def lazy-fib
-        (concat
-        [0 1]
-        ((fn rfib [a b]
-              (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-      </code></pre>
+          (def lazy-fib
+            (concat
+            [0 1]
+            ((fn rfib [a b]
+                  (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+          </code></pre>
 				</section>
+
 			</div>
 		</div>
 		<script src="./js/deck.js" type="module"></script>
