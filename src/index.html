@@ -11,18 +11,53 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-auto-animate>Slide 1</section>
+				<section data-auto-animate data-markdown>
+					<textarea data-template>
+					## Slide 1
+					- Fullscreen on `f`
+					- Speaker notes on `s`
+					- Overview on `o` or `Esc`
+					</textarea>
+				</section>
+
+				<section data-auto-animate data-markdown>
+				<textarea data-template>
+				## Slide 2
+				### Nifty motions
+				- Goto on `g`
+				- Append `?scroll=true` for scrolling layout
+				</textarea>
+
+				</section>
 			  <section>
-          <section data-auto-animate data-background-gradient="linear-gradient(to bottom, #283b95, #176273)">Vertical Slide 1</section>
-          <section data-auto-animate>Vertical Slide 2</section>
+          <section data-auto-animate data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #176273)">
+            ## Another slide!
+
+            > quel suprise!
+          </section>
+          <section data-auto-animate>
+            Vertical Slide 2
+            <aside class="notes" data-markdown>
+              ## so many things
+            </aside>
+          </section>
         </section>
 				<section data-auto-animate>
-				  Slide 2
+		      Media lightbox
 					<video src="test.mp4" data-preview-video></video>
+				</section>
+				<section>
+				  Slide 3
+    		  <pre><code data-trim data-noescape>
+      (def lazy-fib
+        (concat
+        [0 1]
+        ((fn rfib [a b]
+              (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+      </code></pre>
 				</section>
 			</div>
 		</div>
-		<a href="?view=scroll">Scrollable</a>
 		<script src="./js/deck.js" type="module"></script>
 	</body>
 </html>
