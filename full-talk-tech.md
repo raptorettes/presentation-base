@@ -1,12 +1,12 @@
-# HI!
-I'm Rene.
-(hi + drawing of self)
+    # HI!
+    I'm Rene.
+    (hi + drawing of self)
     I've been coming to the makers massive for the last few months and I've been wanting to give a talk because ive been so inspired by everyone elses!
     
     So tonight I'm going to be sharing briefly about my journey into game dev and then some things about godot I've learnt that I think are worth sharing, especially for other beginners.
 
-# Who am i ?
-(art videos)
+    # Who am i ?
+    (art videos)
     Among many things, I'm a self taught artist, a geek, a punk, and apparently now a game dev.
     
     Due to some severe and chronic health conditions growing up, I don't have any secondary, let alone tertiary qualifications. I didn't once attend highschool, though I got straight A's. I had to learn to teach myself. Interestingly enough, I don't really want other peoples qualifications anymore.
@@ -14,74 +14,73 @@ I'm Rene.
     There are many reasons why formal education isn't accessible to people, whether its time, location, health, finances, but there are more ways to learn, and some of this is a reminder that one of those is you teaching yourself.
 
 
-# 3 THE JOURNEY
-(JOURNEY / Short but eventful)
-    
+    # 3 THE JOURNEY
+    (JOURNEY / Short but eventful)
+        
     It's only been about 7 months that I've been going to meet ups and attending game jams. theyve been a huge part of my growth, so I thought Id speed run through them and the projects I've woven in between for some context.
     
     # Predominantly I've thought of myself as an artist
     So even when I started going to these meetups, it was because I thought I could create art for a new medium and profession.
     The meetup was full of punks and nerds, who immediately encouraged me to attend a game jam even without experience. which i Highly recommend.
 
+    
+    JAM #1 : Infinite Sorrow
+    Went as artist.
+    Teamed up with someone I didn't know. Which wasn't hard cz I didn't know anyone.
+    We made a sort of interactive puzzle and top down pixel game, about someone caring for a monster incubator, and trying to find a way to escape in the moments it was happy.
+    Great intro.
 
-JAM #1 : Infinite Sorrow
-Went as artist.
-Teamed up with someone I didn't know. Which wasn't hard cz I didn't know anyone.
-We made a sort of interactive puzzle and top down pixel game, about someone caring for a monster incubator, and trying to find a way to escape in the moments it was happy.
-Great intro.
+    So obsessed, tried to work on it more after the jam with my team mate, and got to a point where I realised I could just ... be the game dev.
 
-So obsessed, tried to work on it more after the jam with my team mate, and got to a point where I realised I could just ... be the game dev.
+    Game #1 - THE INCUBATOR
+    I rewrote the game in Godot from what I remembered from the jam, and between reading documentation and looking through tutorials on youtube,  I tried to replicate what I could. I did almost all of it.
+    
+    And then i was so inspired by a game mechanic in it, (a silly worm herding thing) that I started creating a whole other game.
 
-Game #1 - THE INCUBATOR
-I rewrote the game in Godot from what I remembered from the jam, and between reading documentation and looking through tutorials on youtube,  I tried to replicate what I could. I did almost all of it.
+    Game #2 Wild Thyme.
+    a little wild cow herding game, environmental sim,
+    was a huge learning curve for me. Got much further than I thought I would.
+    I Went through an initial stage and even refactored code into a more complex system using behaviour trees and navigation regions.. Still in progress
 
-And then i was so inspired by a game mechanic in it, (a silly worm herding thing) that I started creating a whole other game.
+    
+    Jam #2 Kakakop
+    we made a card game copying an existing card game called Palace so we didnt have to make up rules,
+    Predom. artist again but this time I was also involved in more of the dev process and logic making and some co learning.
 
-Game #2 Wild Thyme.
-a little wild cow herding game, environmental sim,
-was a huge learning curve for me. Got much further than I thought I would.
-I Went through an initial stage and even refactored code into a more complex system using behaviour trees and navigation regions.. Still in progress
+    Jam #3 SFA - TRIPS
+    worked on adapting it to use a 3 pedal controller for input, just cz we had one and were experimenting. Discovered it was actually really fun to play with your feet and was an interesting accessibility challenge.
+    This all inspired a rewrite into an altered card game called Trips.
+    Actually got to demo it which was a very cool experience.
 
+    Jam #4 Live, Laugh, Lift.
+    Was the artist again, working with 3 other artists and 2 game devs.
+    Made a point and click wheres waldo type game, where you had to find hidden objects at a house party, to help someone summon the god of muscles.
+    Loved drawing for this. Saw others skill share.
 
-Jam #2 Kakakop
-we made a card game copying an existing card game called Palace so we didnt have to make up rules,
-Predom. artist again but this time I was also involved in more of the dev process and logic making and some co learning.
+    Jam #5 - Girly Games Club
+    
+    This time I heard someone elses idea and thought I could implement it with what I had learned already, and became the lead programmer with an artist and support dev.
+    Made an environmental sim about repopulating a kelp forest, and managing population growth.
+    Crazy challenge, really tested me and would love to revisit the idea again one day.
 
-Jam #3 SFA - TRIPS
-worked on adapting it to use a 3 pedal controller for input, just cz we had one and were experimenting. Discovered it was actually really fun to play with your feet and was an interesting accessibility challenge.
-This all inspired a rewrite into an altered card game called Trips.
-Actually got to demo it which was a very cool experience.
+    Game #3(ish) FROGS
+    Got home and was frustrated with what I hadn't gotten right in the jam. Made a game just to practice all the techniques I'd learnt
+    this had NPCS that wandered, state machines, behaviour trees, auto tiling tile maps, navigation agents.I had matured a lot of my ideas. I could see the practice paying off.
+    Not a playable game but a fully functional game environment
 
-Jam #4 Live, Laugh, Lift.
-Was the artist again, working with 3 other artists and 2 game devs.
-Made a point and click wheres waldo type game, where you had to find hidden objects at a house party, to help someone summon the god of muscles.
-Loved drawing for this. Saw others skill share.
+    Jam #6 - Arachnoise
+    I worked as the artist again but also support dev, where i could make assets and actually implement them in godot and writing player controllers and making scenes. big shift for me.
+    we made a circle of fifths inspired music game about a little spider on a musical web, having to play the right chords.
+    *
+    Shout out to Ted and Dean, Viwe, Matthew, I didn't know it was such a pleasure to work with sound people. go work with them.
 
-Jam #5 - Girly Games Club
-
-This time I heard someone elses idea and thought I could implement it with what I had learned already, and became the lead programmer with an artist and support dev.
-Made an environmental sim about repopulating a kelp forest, and managing population growth.
-Crazy challenge, really tested me and would love to revisit the idea again one day.
-
-Game #3(ish) FROGS
-Got home and was frustrated with what I hadn't gotten right in the jam. Made a game just to practice all the techniques I'd learnt
-this had NPCS that wandered, state machines, behaviour trees, auto tiling tile maps, navigation agents.I had matured a lot of my ideas. I could see the practice paying off.
-Not a playable game but a fully functional game environment
-
-Jam #6 - Arachnoise
-I worked as the artist again but also support dev, where i could make assets and actually implement them in godot and writing player controllers and making scenes. big shift for me.
-we made a circle of fifths inspired music game about a little spider on a musical web, having to play the right chords.
-*
-Shout out to Ted and Dean, Viwe, Matthew, I didn't know it was such a pleasure to work with sound people. go work with them.
-
-# Rapid iteration
-The rapid growth and development of ideas I experienced through this unique cross pollination is truly, quite impressive. I don't know where else I would have gotten all of this experience without being able to access formal methods.
-
-So. Please. Get involved. Come to meetups. Give talks. Go to jams. It's punk. It's inclusive. It's the coolest social movement I've encountered, and it's invaluable to make creativity and skill share so accessible.
+    # Rapid iteration
+    The rapid growth and development of ideas I experienced through this unique cross pollination is truly, quite impressive. I don't know where else I would have gotten all of this experience without being able to access formal methods.
+    
+    So. Please. Get involved. Come to meetups. Give talks. Go to jams. It's punk. It's inclusive. It's the coolest social movement I've encountered, and it's invaluable to make creativity and skill share so accessible.
 
 
 
-# So. Here are some technical tips for beginners, because I'm a beginner.
 
 ### Git Good
 This is just programming tip.
