@@ -250,7 +250,7 @@
 
             </ul>
             <div class="fragment" style="white-space: nowrap">
-                 <img src="/region-20260630183054.png" alt="code wall of text">
+                <img src="/region-20260630202446.png" alt="code wall of text">
                 <div>(even this presentation is code)</div>
             </div>
             <aside class="notes" data-markdown="">
@@ -264,13 +264,17 @@
             <h3>Explore Godot!</h3>
             <ul>
                 <li>Great internal docs</li>
-                <li class="fragment">People! </li>
-                <li class="fragment">Tutorials </li>
+                <li class="fragment">People!</li>
+                <li class="fragment">Tutorials</li>
             </ul>
-            <aside class="notes" data-markdown="">On a related note, Godot does a great job of surfacing information and hints, making them discoverable and well documented. If you hover over anything in the editor it will tell you how to use it, and if that's not clear enough you can directly access all the docs inside, along with examples.
+            <aside class="notes" data-markdown="">On a related note, Godot does a great job of surfacing information and
+                hints, making them discoverable and well documented. If you hover over anything in the editor it will
+                tell you how to use it, and if that's not clear enough you can directly access all the docs inside,
+                along with examples.
                 What isn't in engine is on their docs website.
                 And other than that the discord server has a wealth of information and people to talk to.
-                GDQuest also has a game you can play to learn.</aside>
+                GDQuest also has a game you can play to learn.
+            </aside>
         </section>
         <section>
             <h3>Strongly type things</h3>
@@ -278,83 +282,202 @@
                 <li>Makes auto complete work</li>
                 <li>Stops bugs</li>
             </ul>
-            <aside class="notes" data-markdown="">I think if you start learning in other languages it might be more native. But as a first time programmer learning gdscript (which is kinda python), I didn't understand the benefits of your script knowing what type of thing it will be handling. So, if you know your function is going to be passed a whole number, just define that it will be an int , rather than leaving it all loosey. Apparently this helps! A lot of auto complete in Godot just doesn't happen unless you've defined things. I just thought godot was a bad ide. turns out it isn't! well. It is, but that wasn't one of the ways it was bad...</aside>
+            <aside class="notes" data-markdown="">I think if you start learning in other languages it might be more
+                native. But as a first time programmer learning gdscript (which is kinda python), I didn't understand
+                the benefits of your script knowing what type of thing it will be handling. So, if you know your
+                function is going to be passed a whole number, just define that it will be an int , rather than leaving
+                it all loosey. Apparently this helps! A lot of auto complete in Godot just doesn't happen unless you've
+                defined things. I just thought godot was a bad ide. turns out it isn't! well. It is, but that wasn't one
+                of the ways it was bad...
+            </aside>
         </section>
         <section>
-            <h3></h3>
-            <ul>
-                <li></li>
-                <li class="fragment"></li>
-                <li class="fragment"></li>
+            <h3>Asset Lib</h3>
+            <ul class="fragment">
+                <li>Built-in, full of community plugins</li>
+                <li class="fragment">Each links to a documented Github repo</li>
             </ul>
+            <aside class="notes" data-markdown="">The asset library is a built in function, self explanatory. Full of
+                community plugins, Each has a github repo you can click through to and these are usually well documented
+                with everything you need to know about how to use them.
+            </aside>
+        </section>
+
+        <section>
+            <h3>Quantity over quality</h3>
+            <ul class="fragment">
+                <li>10 ok assets &gt; 1 great one</li>
+                <li class="fragment">20 variations of one effect, randomized at runtime</li>
+                <li class="fragment">Teaches you what "modular" means for your engine</li>
+            </ul>
+            <aside class="notes" data-markdown="">I find myself advocating for this more and more, across all my
+                skillsets. Rapid iteration and ideation is a great skill to practice. in a lot of these jams, it was
+                more helpful for me to make 10 ok assets, instead of 1 great one. Instead of one effect, I made 20
+                variations so it could be randomized at run time, making a non repetitve game visually.
+                This will also teach you what modular assets mean to each game type and dev or engine.
+            </aside>
+        </section>
+
+        <section data-background-gradient="linear-gradient(to bottom, #28553b, #274332)">
+            <h1>Now some cool things I've learnt</h1>
             <aside class="notes" data-markdown=""></aside>
         </section>
 
-
-        <!-- Others ... -->
-        <section data-auto-animate>
-            <h2 data-id="heading">Slide 2</h2>
-            <div class="split">
-                <div class="left">
-                    <ul>
-                        <li>Fullscreen on `f`</li>
-                        <li>Speaker notes on `s`</li>
-                        <li>Overview on `o` or `Esc`</li>
-                        <li>Overview on `o` or `Esc`</li>
-                    </ul>
-                </div>
-
-                <div class="right">
-                    <video data-src="//presentation-vids.noetic.work/test.mp4" data-preview-video></video>
-                </div>
-            </div>
-        </section>
         <section>
-            <section data-auto-animate data-markdown
-                     data-background-gradient="linear-gradient(to bottom, #283b95, #176273)">
-                ## Another slide!
+            <h3>Climb on shoulders</h3>
+            <ul class="fragment">
+                <li>Use plugins / other people's scripts</li>
+                <li class="fragment">Not a cheat &ndash; just a tool</li>
+                <li class="fragment">Even beginners can use advanced tools</li>
+            </ul>
+            <aside class="notes" data-markdown="">It's important to understand the fundamentals, but there are others
+                that have gone before you and made some great tools. They still take learning and getting good at, it's
+                not a cheat, it's just a tool you can use. And even beginners can use advanced tools. In fact thats what
+                a game engine is. So don't think you have to do everything from scratch.
+            </aside>
+        </section>
 
-                > quel suprise!
-            </section>
-            <section data-auto-animate>
-                Talking about things in my notes
-                <aside class="notes" data-markdown>
-                    ## so many things
-                </aside>
-            </section>
+        <section>
+            <h3>State Machines</h3>
+            <h5 data-id="subheading">plugin / built in</h5>
+            <ul class="fragment">
+                <li>Managing NPCs &amp; effects without one = spaghetti</li>
+                <li class="fragment">Rudimentary: signal connections in a script</li>
+                <li class="fragment">Sophisticated: <em>State Charts</em> plugin, nice UI</li>
+            </ul>
+            <aside class="notes" data-markdown="">Managing NPCs and environmental effects is crazy without them. Your
+                code becomes spaghetti, and debugging is a nightmare.
+                You can make your own rudimentary state machine, by keeping a bunch of signal connections in a script.
+                Or use a more sophisticated plugin like State Charts. Has a Nice UI and You can actually write and
+                describe a whole series of interactions and transitions using the states before touching code or
+                connecting signals.
+            </aside>
         </section>
-        <section data-auto-animate>
-            Media lightbox
-            <video data-src="//presentation-vids.noetic.work/test.mp4" data-preview-video></video>
+
+        <section>
+            <h3>Behaviour Trees</h3>
+            <h5 data-id="subheading">plugin &ndash; LimboAI</h5>
+            <ul class="fragment">
+                <li>Forces modular, separated code</li>
+                <li class="fragment">Reusable scripts (e.g. find_navigable_position)</li>
+                <li class="fragment">Visual debugger!!!</li>
+            </ul>
+            <aside class="notes" data-markdown="">Similarly with behaviour trees.
+                LimboAI is great example.
+                This took a modular understanding of my code, and the discipline to pull apart functions and effects
+                into isolated code chunks. the separation of concerns is a fundamental principle. It saves you from so
+                many bugs, and allows you to edit and change things modularly without effecting more things than you
+                realised.
+                allows you to reuse your scripts. Like, find_navigable_position and move_to_position should be reusable.
+                Visual debugger !!!
+            </aside>
         </section>
-        <section data-markdown>
-            <textarea data-template>
-                ## Slide 3
-                
-                ```godot [1-2|4|12|18-19]
-                 extends CharacterBody2D
-                 class_name Spidey
-                
-                 @export var move_speed: float = 120
-                 @onready var animation_tree = $AnimationTree
-                 @onready var state_machine = animation_tree.get("parameters/playback")
-                 @onready var anim_player = $AnimationPlayer
-                 @onready var sprite = $Sprite2D
-                 @export var state_chart: StateChart
-                 @onready var animated_sprite_2d: AnimatedSprite2D = %AnimatedSprite2D
-                
-                 var input_direction: Vector2 = Vector2.ZERO
-                 var midi_direction: Vector2 = Vector2.ZERO
-                 var current_state: String = ""
-                 var mode_switching: bool = false
-                
-                 func pick_new_state():
-                     var new_state = "walk" if input_direction != Vector2.ZERO else "idle"
-                     if new_state != current_state:
-                         current_state = new_state
-                ```
-              </textarea>
+
+        <section>
+            <h3>State machines + behaviour trees</h3>
+            <p class="fragment">Different states, different behaviours &ndash; they work great together</p>
+            <aside class="notes" data-markdown=""></aside>
         </section>
+
+        <section>
+            <h3>Auto Tiling Maps</h3>
+            <h5 data-id="subheading">built in</h5>
+            <ul class="fragment">
+                <li>You will spend more time on maps than you think</li>
+                <li class="fragment">Set it up properly &ndash; even in a jam</li>
+                <li class="fragment">Then you can just draw your levels</li>
+            </ul>
+            <aside class="notes" data-markdown="">it's worth the time setting your maps up properly. Even in a jam! You
+                think you're not going to spend much time making maps, and you could totally just repeatedly point and
+                click tiles and reselect them, it's fine. But. You will spend way more time than you think making maps.
+                SO JUST SET IT UP.
+                Then you can just draw your levels.
+                You'll come across peering bits, where you tell it what edges and corners should touch what, don't be
+                afraid! This looks more complex than it ends up being, but learning it might feel like a bum.
+            </aside>
+        </section>
+
+        <section>
+            <h3>Dual Grid System</h3>
+            <h5 data-id="subheading">plugin</h5>
+            <ul class="fragment">
+                <li>Standard 3x3 bitmask: up to 47 tiles</li>
+                <li class="fragment">Dual-grid: only 15 tiles</li>
+                <li class="fragment">Works with square, hex, isometric grids</li>
+            </ul>
+            <aside class="notes" data-markdown="">All artists should look at this, especially if you'd like to make orig
+                assets for jams.
+                A standard 3x3 bitmask approach requires up to 47 tiles to cover every combination, whereas the
+                dual-grid approach only needs 15. That's a huge reduction in art workload for the same visual quality.
+                Check it out. They'll explain it better than I can because I can't. But I can use it!
+                It is a plugin and it works with all grid types (square, hex, isometric)
+            </aside>
+        </section>
+
+        <section>
+            <h3>Automator</h3>
+            <h5 data-id="subheading">built in &ndash; AnimationPlayer</h5>
+            <ul class="fragment">
+                <li>Animates EVERYTHING. Literally.</li>
+                <li class="fragment">Every editor setting has a key position</li>
+                <li class="fragment">Ours handles transitions, music, and more</li>
+            </ul>
+            <aside class="notes" data-markdown="">The animation tree is this little secret weapon, it animates
+                EVERYTHING. Literally. Every single setting and thing in your editor has a key position you can animate.
+                We've started putting one in our game scene called the AUTOMATOR that handles transitions, music, a
+                whole bunch of things. Super powerful.
+            </aside>
+        </section>
+
+        <section>
+            <h3>Scalable Vector Shapes 2D</h3>
+            <h5 data-id="subheading">plugin</h5>
+            <ul class="fragment">
+                <li>Vectors, inside Godot</li>
+                <li class="fragment">Scale and animate them, easily</li>
+                <li class="fragment">Feels like Moho or Rive</li>
+            </ul>
+            <aside class="notes" data-markdown="">A recent find so i cant say much, other than you can create vectors in
+                godot! Scale and animate them! So easy. Feels like moho or rive
+            </aside>
+        </section>
+
+        <section>
+            <h3>Phantom Camera</h3>
+            <p class="fragment">Invaluable for cinematic, organic camera movement and tracking</p>
+            <aside class="notes" data-markdown="">Invaluable. All the cinematic and organic camera movements and
+                tracking. Definitely gave a more engaging and interactive experience to the game.
+            </aside>
+        </section>
+
+        <section>
+            <h3>A couple more invaluable plugins</h3>
+            <ul class="fragment">
+                <li>Inspector Tabs &ndash; separates your inspector into useful tabs</li>
+                <li class="fragment">Smart Editor &ndash; IDE-style features in the script editor (start every project
+                    with this)
+                </li>
+                <li class="fragment">Player Controllers &amp; Maaack's Game Template</li>
+            </ul>
+            <aside class="notes" data-markdown="">There are some invaluable plugins to make your life easier.
+                Inspector Tabs that separates your inspector into useful tabs.
+                Smart Editor adds IDE-style features to the script editor. I start all my games with this.
+                Player Controllers and Maaacks game template.
+            </aside>
+        </section>
+
+        <section data-background-gradient="linear-gradient(to top, #283b75, #422242)">
+            <h1>Go make something</h1>
+            <aside class="notes" data-markdown="">I guess I'd like to end with an encouragement to pick up godot and try
+                use it.
+                Pick a tutorial, pick a challenge, start a project, and just try make something in it. It's a great
+                piece of opensource, free software.
+                Especially if you're a creative from another field, I encourage you to try and use game engines too even
+                if you don't think you're a dev.
+                You might just become one.
+            </aside>
+        </section>
+
     </div>
 </div>
 <style>
