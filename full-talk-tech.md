@@ -172,3 +172,32 @@ I guess I'd like to end with an encouragement to pick up godot and try use it.
 Pick a tutorial, pick a challenge, start a project, and just try make something in it. It's a great piece of opensource, free software.
 Especially if you're a creative from another field, I encourage you to try and use game engines too even if you don't think you're a dev.
 You might just become one.
+
+
+
+///\
+
+
+
+                <section
+                    data-background-gradient="linear-gradient(to bottom, #283b75, #422242)"
+                >
+                    <h1>Rapid iteration inspired growth</h1>
+                    <ul class="fragment">
+                        <li>Get involved</li>
+                        <li>Join meetups</li>
+                        <li>Give talks</li>
+                        <li>Join jams</li>
+                        <li>Invaluable for skill share accessibility</li>
+                    </ul>
+                    <aside class="notes" data-markdown="">
+                        The rapid growth and development of ideas I experienced
+                        through this unique cross pollination is truly I don't
+                        know where else I would have gotten all of this
+                        experience without being able to access formal methods.
+                        So. Please. Get involved. Come to meetups. Give talks.
+                        Go to jams. It's punk. It's inclusive. It's the coolest
+                        social movement I've encountered, and it's invaluable to
+                        make creativity and skill share so accessible.
+                    </aside>
+                </section>
