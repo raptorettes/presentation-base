@@ -40,6 +40,7 @@
             echo ""
             just -l
             echo ""
+            bun install
           '';
         };
       });
