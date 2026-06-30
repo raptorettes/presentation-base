@@ -11,6 +11,8 @@ import 'reveal.js/plugin/highlight/monokai.css'
 let deck = new Reveal({
   hash: true,
   history: true,
+  controls: 'speaker',
+  showSlideNumber: 'speaker',
   plugins: [Markdown, Notes, Highlight, Zoom],
 })
 
