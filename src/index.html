@@ -1,65 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-		/>
-		<title>Noetic</title>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <title>Artist's Game Dev Journey</title>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-auto-animate>
+                    <h3>Artist's Game Dev Journey</h3>
+                    <p></p>
+                </section>
 
-				<section data-auto-animate data-markdown>
-					<textarea data-template>
-					## Slide 1
-					- Fullscreen on `f`
-					- Speaker notes on `s`
-					- Overview on `o` or `Esc`
-					</textarea>
-				</section>
-
-				<section data-auto-animate data-markdown>
-				<textarea data-template>
-				## Slide 2
-				### Nifty motions
-				- Goto on `g`
-				- Append `?view=scroll` for scrolling layout
-				</textarea>
-
-				</section>
-			  <section>
-          <section data-auto-animate data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #176273)">
-            ## Another slide!
-
-            > quel suprise!
-          </section>
-          <section data-auto-animate>
-
-            <aside class="notes" data-markdown>
-              ## so many things
-            </aside>
-          </section>
-        </section>
-				<section data-auto-animate>
-		      Media lightbox
-					<video src="test.mp4" data-preview-video></video>
-				</section>
-				<section>
-				  Slide 3
-    		  <pre><code data-trim data-noescape>
+                <section data-auto-animate>
+                    <h3>Who dat?</h3>
+                </section>
+                <section data-auto-animate></section>
+                <section data-auto-animate data-markdown></section>
+                <section data-auto-animate>
+                    <aside class="notes" data-markdown>## so many things</aside>
+                </section>
+                <section>
+                    <section
+                        data-auto-animate
+                        data-markdown
+                        data-background-gradient="linear-gradient(to bottom, #283b95, #176273)"
+                    >
+                        ## Another slide! > quel suprise!
+                    </section>
+                    <section data-auto-animate>
+                        <aside class="notes" data-markdown>
+                            ## so many things
+                        </aside>
+                    </section>
+                </section>
+                <section data-auto-animate>
+                    Media lightbox
+                    <video src="test.mp4" data-preview-video></video>
+                </section>
+                <section>
+                    Slide 3
+                    <pre><code data-trim data-noescape>
           (def lazy-fib
             (concat
             [0 1]
             ((fn rfib [a b]
                   (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
           </code></pre>
-				</section>
-
-			</div>
-		</div>
-		<script src="./js/deck.js" type="module"></script>
-	</body>
+                </section>
+            </div>
+        </div>
+        <script src="./js/deck.js" type="module"></script>
+    </body>
 </html>
