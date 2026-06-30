@@ -1,59 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta
+<head>
+    <meta charset="utf-8"/>
+    <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <title>Artist's Game Dev Journey</title>
-    </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
-                <section data-auto-animate>
-                    <h3>Artist's Game Dev Journey</h3>
-                    <p></p>
-                </section>
+    />
+    <title>Noetic</title>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
 
-                <section data-auto-animate>
-                    <h3>Who dat?</h3>
-                </section>
-                <section data-auto-animate></section>
-                <section data-auto-animate data-markdown></section>
-                <section data-auto-animate>
-                    <aside class="notes" data-markdown>## so many things</aside>
-                </section>
-                <section>
-                    <section
-                        data-auto-animate
-                        data-markdown
-                        data-background-gradient="linear-gradient(to bottom, #283b95, #176273)"
-                    >
-                        ## Another slide! > quel suprise!
-                    </section>
-                    <section data-auto-animate>
-                        <aside class="notes" data-markdown>
-                            ## so many things
-                        </aside>
-                    </section>
-                </section>
-                <section data-auto-animate>
-                    Media lightbox
-                    <video src="test.mp4" data-preview-video></video>
-                </section>
-                <section>
-                    Slide 3
-                    <pre><code data-trim data-noescape>
-          (def lazy-fib
-            (concat
-            [0 1]
-            ((fn rfib [a b]
-                  (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-          </code></pre>
-                </section>
+        <section>
+            <h1 data-id="heading">Hi!</h1>
+            <aside class="notes">
+                I've been coming to the makers massive for the last few months and I've been wanting to give a talk because ive been so inspired by everyone elses!
+
+                So tonight I'm going to be sharing briefly about my journey into game dev and then some things about godot I've learnt that I think are worth sharing, especially for other beginners.
+            </aside>
+        </section>
+        
+        <section>
+            <video src="/Jams/knuckle-butt-beginning.mp4" data-autoplay></video>
+            <aside class="notes">
+                # Who am I?
+                Among many things, I'm a self-taught artist, a geek, a punk, and apparently now a game dev.
+
+                Due to some severe and chronic health conditions growing up, I don't have any secondary, let alone tertiary qualifications. I didn't once attend highschool, though I got straight A's. I had to learn to teach myself. Interestingly enough, I don't really want other peoples qualifications anymore.
+
+                There are many reasons why formal education isn't accessible to people, whether its time, location, health, finances, but there are more ways to learn, and some of this is a reminder that one of those is you teaching yourself.
+            </aside>
+        </section>
+        
+        <section>
+            <h1 data-id="heading">Journey</h1>
+            <aside class="notes">
+                # Predominantly I've thought of myself as an artist
+                
+                It's only been about 7 months that I've been going to meet ups and attending game jams. theyve been a huge part of my growth, so I thought Id speed run through them and the projects I've woven in between for some context.
+                So even when I started going to these meetups, it was because I thought I could create art for a new medium and profession.
+                The meetup was full of punks and nerds, who immediately encouraged me to attend a game jam even without experience. which i Highly recommend.
+            </aside>
+        </section>
+        
+        <section data-auto-animate>
+            <h2 data-id="heading">Slide 1</h2>
+            <div class="split">
+                <div class="left">
+                    <ul>
+                        <li class="fragment">
+                            Jam #1
+                            Infinite Sorrow</li>
+                        <li class="fragment">Speaker notes on `s`</li>
+                        <li class="fragment">Overview on `o` or `Esc`</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <video src="/test.mp4" data-preview-video></video>
+                </div>
             </div>
-        </div>
-        <script src="./js/deck.js" type="module"></script>
-    </body>
+            
+        </section>
+
+        <section data-auto-animate>
+            <h2 data-id="heading">Slide 2</h2>
+            <div class="split">
+                <div class="left">
+                    <ul>
+                        <li>Fullscreen on `f`</li>
+                        <li>Speaker notes on `s`</li>
+                        <li>Overview on `o` or `Esc`</li>
+                        <li>Overview on `o` or `Esc`</li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <video src="/test.mp4" data-preview-video></video>
+                </div>
+            </div>
+        </section>
+        <section>
+            <section data-auto-animate data-markdown
+                     data-background-gradient="linear-gradient(to bottom, #283b95, #176273)">
+                ## Another slide!
+
+                > quel suprise!
+            </section>
+            <section data-auto-animate>
+                Talking about things in my notes
+                <aside class="notes" data-markdown>
+                    ## so many things
+                </aside>
+            </section>
+        </section>
+        <section data-auto-animate>
+            Media lightbox
+            <video src="/test.mp4" data-preview-video></video>
+        </section>
+        <section data-markdown>
+            <textarea data-template>
+                ## Slide 3
+                
+                ```godot [1-2|4|12|18-19]
+                 extends CharacterBody2D
+                 class_name Spidey
+                
+                 @export var move_speed: float = 120
+                 @onready var animation_tree = $AnimationTree
+                 @onready var state_machine = animation_tree.get("parameters/playback")
+                 @onready var anim_player = $AnimationPlayer
+                 @onready var sprite = $Sprite2D
+                 @export var state_chart: StateChart
+                 @onready var animated_sprite_2d: AnimatedSprite2D = %AnimatedSprite2D
+                
+                 var input_direction: Vector2 = Vector2.ZERO
+                 var midi_direction: Vector2 = Vector2.ZERO
+                 var current_state: String = ""
+                 var mode_switching: bool = false
+                
+                 func pick_new_state():
+                     var new_state = "walk" if input_direction != Vector2.ZERO else "idle"
+                     if new_state != current_state:
+                         current_state = new_state
+                ```
+              </textarea>
+            </section>
+    </div>
+</div>
+<style>
+    .split {
+        display: flex;
+        flex-direction: row;
+    }
+    .left {
+        flex: 1;
+        li {
+            list-style: none;
+            font-size: 0.8em;
+            white-space: nowrap;
+            text-align: right;
+        }
+    }
+    .right {
+        flex: 2;
+    }
+</style>
+<script src="./js/deck.js" type="module"></script>
+</body>
 </html>

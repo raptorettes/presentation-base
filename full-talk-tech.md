@@ -1,29 +1,27 @@
 # HI!
-
 I'm Rene.
-(some art? or drawing of self)
-I've been coming to the makers massive for the last few months and I've been wanting to give a talk because ive been so inspired by everyone elses!
-
-So tonight I'm going to be sharing briefly about my journey into game dev and then some things about godot I've learnt that I think are worth sharing, especially for other beginners.
+(hi + drawing of self)
+    I've been coming to the makers massive for the last few months and I've been wanting to give a talk because ive been so inspired by everyone elses!
+    
+    So tonight I'm going to be sharing briefly about my journey into game dev and then some things about godot I've learnt that I think are worth sharing, especially for other beginners.
 
 # Who am i ?
 (art videos)
-Among many things, I'm a self taught artist, a geek, a punk, and apparently now a game dev.
-
-Due to some severe and chronic health conditions growing up, I don't have any secondary, let alone tertiary qualifications. I didn't once attend highschool, though I got straight A's.I had to learn to teach myself. Interestingly enough, I don't really want other peoples qualifications anymore.
-
-There are many reasons why formal education isn't accessible to people, whether its time, location, health, finances, but there are more ways to learn, and some of this is a reminder that one of those is you teaching yourself.
+    Among many things, I'm a self taught artist, a geek, a punk, and apparently now a game dev.
+    
+    Due to some severe and chronic health conditions growing up, I don't have any secondary, let alone tertiary qualifications. I didn't once attend highschool, though I got straight A's. I had to learn to teach myself. Interestingly enough, I don't really want other peoples qualifications anymore.
+    
+    There are many reasons why formal education isn't accessible to people, whether its time, location, health, finances, but there are more ways to learn, and some of this is a reminder that one of those is you teaching yourself.
 
 
 # 3 THE JOURNEY
-
-(Short but eventful.)
-
-It's only been about 7 months that I've been going to meet ups and attending game jams. theyve been a huge part of my growth, so I thought Id speed run through them and the projects I've woven in between for some context.
-
-# Predominantly I've thought of myself as an artist
-So even when I started going to these meetups, it was because I thought I could create art for a new medium and profession.
-The meetup was full of punks and nerds, who immediately encouraged me to attend a game jam even without experience. which i Highly recommend.
+(JOURNEY / Short but eventful)
+    
+    It's only been about 7 months that I've been going to meet ups and attending game jams. theyve been a huge part of my growth, so I thought Id speed run through them and the projects I've woven in between for some context.
+    
+    # Predominantly I've thought of myself as an artist
+    So even when I started going to these meetups, it was because I thought I could create art for a new medium and profession.
+    The meetup was full of punks and nerds, who immediately encouraged me to attend a game jam even without experience. which i Highly recommend.
 
 
 JAM #1 : Infinite Sorrow
